@@ -1,0 +1,64 @@
+/* div{
+	width: 250px;
+	height: 200px;
+	background-color: rgb(147, 43, 60);
+	font-size: 20px;
+} */
+
+div{
+	width: 250px;
+	height: 400px;
+	background-color: aqua;
+}
+
+h1{  
+	background-color: blueviolet;
+	padding-top: 50px;
+	padding-left: 100px;
+	margin: 0px;
+	display: block;
+}
+
+#one{
+	background-color: #005f73;
+	border-width: 5px;
+	border-color: black;
+	border-style: solid;
+
+	/*when borders are applied it is added to the element*/
+	/*this increases the size of the element*/
+	/*to fix this*/
+	box-sizing: border-box;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+#two{
+	background-color: #0a9396;
+	border-width:3px ;
+	border-color: #03045e;
+	border-style: dashed;
+	border-right-width: 5px;
+	border-radius: 15%;
+
+	/*padding to fit data inside the rounded edges*/
+	padding: 20px;
+	margin-bottom: 50px;
+	margin-left: 200px;
+}
+#three{
+	background-color: #94d2bd;
+	
+	/*short hand notation*/
+	/*border: width style color*/
+	border: 6px inset #9b2226;
+	border-top-left-radius: 15%;
+	border-top-right-radius: 15%;
+	margin-bottom: 50px;
+}
+
+button{
+	padding: 5px 10px;
+	/*vertical | horizontal*/
+	padding: 5px 15px 5px 20px;
+	/*top | right | bottom | left*/
+}

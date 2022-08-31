@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- name is a important parameter of input,select,etc tag -->
+	<h1>Demo Form</h1>
+	<form action="movies.html">
+		<p>
+			<label for="username">Enter a name: </label>
+			<input id = "username"type="text" placeholder="name" name="username">
+		</p>
+		<p>
+			<label for="password">Enter password</label>
+			<input id = "password"type="password" placeholder="Enter password" name="password">
+		</p>
+		<p>
+			<label for="color">Select a color</label>
+			<input type="color" id="color" name="color">
+		</p>
+		<p>
+			<label for="number">Enter a number</label>
+			<input type="number" placeholder="Enter number" name="number">
+		</p>
+		<!-- different ways to create a button -->
+
+		<input type="button" value="Click me">
+		<button>Click here</button>
+		<input type="submit" value="Click here to submit">
+		<button type="button">Wont do anything</button>
+	</form>
+
+	<hr>
+	<form action="https://www.google.com/search">
+		<input type="text" name="q">
+		<button>Search google</button>
+	</form>
+
+	<h2>Some more inputs</h2>
+	<form action="any">
+		<input type="checkbox" name="agree" id="agree">
+		<label for="agree">I agree</label>
+		<p>
+			<label for="xs">XS</label>
+			<input type="radio" name="size" id="xs" value="xs">
+			<label for="s">S</label>
+			<input type="radio" name="size" id="s" value="s">
+			<label for="m">M</label>
+			<input type="radio" name="size" id="m" value="m">
+		</p>
+
+		<label for="pet">Select a pet</label>
+		<select name="pet" id="pet">
+			<option value="">Choose a pet</option>
+			<option value="dog">Dog</option>
+			<option value="cat">Cat</option>
+			<option value="rat">Rat</option>
+		</select>
+		<button>Subbmit</button>
+	</form>
+
+	<h2>Validations demo</h2>
+	<form action="/dummy">
+		<label for="username">Enter user name: </label>
+		<input type="text" name="username" id="username" required>
+
+		<h3>Validations for length</h3>
+		<label for="password">Enter password</label>
+		<input type="text" name="password" id="password" minlength="5" maxlength="8" required>
+
+		<p>
+			<label for="mail">Enter mail</label>
+			<input type="email" name="mail" id="mail" required>
+		</p>
+		<p><button>Click here</button></p>
+	</form>
+</body>
+</html>

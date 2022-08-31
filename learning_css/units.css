@@ -1,0 +1,42 @@
+/*em have a drawback that they can be stacked up as they take reference from parent node*/
+/*Thus increasing or decreasing the size of font*/
+
+/*rem solves these problems by taking reference from the root element*/
+
+section{
+	background-color: #023e8a;
+	width: 500px;
+	height: 500px;
+	padding: 40px;
+	margin-top: 25px;
+}
+
+div{
+	background-color: #0096c7;
+	width: 80%;
+	height: 60%;
+	border-style: dashed;
+}
+
+article{
+	font-size: 20px;
+}
+
+h1{
+	border-style: solid;
+	border-color: blueviolet;
+	border-width: 60px;
+	border-radius: 25%;
+	text-align: center;
+}
+
+h2{
+	font-size: 2em;
+}
+
+button{
+	font-size: 1em;
+	padding: 0.5em 1em;
+	background-color: #84a59d;
+	border-radius: 1em;
+}

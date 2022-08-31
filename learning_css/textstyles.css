@@ -1,0 +1,50 @@
+/*order of specificity*/
+/*  id selectors > class/attribute selectors > element selectors */
+
+html,body{
+	height: 100%;
+	background-color: black;
+	color: whitesmoke;
+}
+
+h1{
+	text-align: right;
+	/**/
+	width: 50%;
+	/*how bold the text is*/
+	font-weight: 600;
+	/*controls the appearance of the txt*/
+	text-decoration: red wavy  underline;
+
+	letter-spacing: 10px;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+a{
+	text-decoration: none;
+	color: lightgoldenrodyellow;
+}
+
+p{
+	text-transform: uppercase;
+	line-height: 1.5;
+	font-size: 25px;
+	font-family: Verdana;
+	/*font family is generally used with a font stack*/
+	/*fontstack contains backup fonts in case one is not supported by the machine*/
+}
+
+span{
+	color: #156DE1;
+	background-color: white;
+}
+
+/*pseudo elements*/
+p::selection{
+	color: lightpink;
+}
+
+/* if multiple times an element is assigned values the one which is declared last will be implemented
+ */
