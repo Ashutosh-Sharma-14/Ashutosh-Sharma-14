@@ -17,19 +17,10 @@
         <form name="myform" onsubmit="return validateform()" method="post">
             <div class="row">
                 <div class="col-4">
-                    <label for="fname">First Name </label>
+                    <label for="fname">Name </label>
                 </div>
                 <div class="col-4">
                     <input type="text" name = "fname">
-                </div>
-                <br><br>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <label>Last Name </label>
-                </div>
-                <div class="col-4">
-                    <input type="text">
                 </div>
                 <br><br>
             </div>
@@ -61,11 +52,20 @@
                 
                 <div class="col-4"><input type="text"></div>
                 
-                <br><br><br><br>
+                <br><br>
             </div>
-            
-            <button type="submit" class="btn btn-outline-primary">Submit</button>
-            <button type="reset" class="btn btn-outline-primary">Reset</button>
+
+            <div class="checkbox">
+                <div id="checkbox">
+                    <input type="checkbox" id="save">
+                    <label for="save">Remember me</label>
+                </div>
+            </div>
+            <br><br>
+            <div class="mybutton">
+                    <button type="submit" class="btn btn-outline-primary" id="submit">Submit</button>
+                    <button type="reset" class="btn btn-outline-primary" id="reset">Reset</button>
+            </div>
            
         </form>
     </div>

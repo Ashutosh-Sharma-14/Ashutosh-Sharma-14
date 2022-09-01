@@ -7,3 +7,21 @@
     padding: 20px;
 }
 
+.checkbox{
+    display: flex;
+    /* border: 2px solid black;   */
+    justify-content: flex-end;
+}
+
+.mybutton{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+#submit, #reset{
+    margin:20px
+}
+
+
+
