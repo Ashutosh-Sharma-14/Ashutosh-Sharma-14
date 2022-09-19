@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        <label for="name">First name</label>
+        <input type="text" id="name">
+        <button type="submit" onclick="getValue()">submit</button>
+        <p id="demo"></p>
+    </div>
+
+    <div class="two">
+        <label for="num1">Enter number 1</label>
+        <input type="text" id="num1">
+        <label for="num2">Enter number 2</label>
+        <input type="text" id="num2">
+
+    </div>
+    <button type="submit" onclick="add()">ADD</button>
+    <button type="submit" onclick="sub()">SUBTRACT</button>
+    <p id="value"></p>
+    
+
+    <script>
+        function getValue(){
+            let name = document.querySelector('#name').value;
+            let greet = `Hello ${name}! How are you today`;
+
+            document.querySelector('#demo').innerText = greet;
+        }
+
+        function add(){
+            let num1 = parseInt(document.querySelector('#num1').value);
+            let num2 = parseInt(document.querySelector('#num2').value);
+            let a = `${num1} + ${num2} = ${num1+num2}`;
+            document.querySelector('#value').innerHTML = a;
+        }
+
+        function sub(){
+            let num1 = parseInt(document.querySelector('#num1').value);
+            let num2 = parseInt(document.querySelector('#num2').value);
+            let s = `${num1} - ${num2} = ${num1-num2}`;
+            document.querySelector('#value').innerHTML = s;
+        }
+    </script>
+</body>
+</html>
