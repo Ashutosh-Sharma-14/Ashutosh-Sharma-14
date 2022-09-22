@@ -10,30 +10,21 @@
 </head>
 <body>
     
-    <div id="forms">
-        <h1>This is my form</h1>
-        <h4>Enter your details: </h4>
+    <div class="main-block">
+        <h1>Registration form</h1>
+        <!-- <h4>Enter your details: </h4> -->
         <br>
         <form name="myform" onsubmit="return validateform()" method="post">
-            <!-- <div class="row">
-                <div class="col-4">
-                    <label for="fname">First Name </label>
-                </div>
-                <div class="col-4">
-                    <input type="text" name = "fname">
-                </div>
-                <br><br>
-            </div>
+            <hr>
+            <div class="account-type">
+                <input type="radio" value="none" id="radioOne" name="account" checked/>
+                <label for="radioOne" class="radio">Personal</label>
+                <input type="radio" value="none" id="radioTwo" name="account" />
+                <label for="radioTwo" class="radio">Company</label>
+              </div>
+            <hr>
             <div class="row">
-                <div class="col-4">
-                    <label>Last Name </label>
-                </div>
-                <div class="col-4">
-                    <input type="text">
-                </div>
-                <br><br>
-            </div> -->
-            <div class="row">
+                <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
                 <div class="col-4">
                     <label>User Name</label>
                 </div>
@@ -52,20 +43,22 @@
             <div class="row">
                 <div class="col-4"><label>Password</label></div>
                 
-                <div class="col-4"><input type="text"></div>
+                <div class="col-4"><input type="password"></div>
                 
                 <br><br>
             </div>
             <div class="row">
                 <div class="col-4"><label>Confirm Password </label></div>
                 
-                <div class="col-4"><input type="text"></div>
+                <div class="col-4"><input type="password"></div>
                 
                 <br><br><br><br>
             </div>
-            
-            <button type="submit" class="btn btn-outline-primary">Submit</button>
-            <button type="reset" class="btn btn-outline-primary">Reset</button>
+            <hr>
+            <div class="btn-block">
+                <div><button type="submit" class="btn btn-outline-primary">Submit</button></div>
+                <div><button type="reset" class="btn btn-outline-primary">Reset</button></div>
+            </div>
            
         </form>
     </div>

@@ -1,9 +1,54 @@
-#forms{
-    height: 700px;
-    width: 600px;
-    border: 2px black dashed;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 20px;
+html, body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    }
+
+hr {
+    color: #a9a9a9;
+    opacity: 0.4;
+    }
+
+form{
+    margin: 0 30px;
 }
 
+h1 {
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    }
+
+.main-block {
+    max-width: 400px; 
+    min-height: 500px; 
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 5px; 
+    border: solid 1px #ccc;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    background: #ebebeb; 
+    }
+
+    .btn-block {
+        margin-top: 10px;
+        text-align: center;
+        /* display: inline-block; */
+        }
+    button {
+        width: 100%;
+        padding: 10px 0;
+        margin: 10px auto;
+        border-radius: 5px; 
+        border: none;
+        background: #1c87c9; 
+        font-size: 14px;
+        font-weight: 600;
+        /* color: #fff; */
+        display: inline-block;
+        }
+    button:hover {
+        background: #26a9e0;
+        }
+    
