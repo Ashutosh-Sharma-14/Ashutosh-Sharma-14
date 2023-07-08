@@ -1,6 +1,7 @@
 - 👋 Hi, I’m @Ashutosh-Sharma-14
 - 👀 I’m interested in learning new technologies
-- 🌱 I’m currently learning data science and machine learning
+- 🌱 Currently learning web development
+- ✨ I also like to work with data
 - 📫 Mail me at sharma.ashutosh1010@gmail.com 
 
 <!---
